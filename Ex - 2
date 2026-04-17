@@ -1,0 +1,19 @@
+// 6. Remover duplicados
+function removerDuplicados(lista) {
+  // implementar
+}
+
+// 7. Soma de pares
+function somaPares(lista) {
+  // implementar
+}
+
+// 8. Palíndromo
+function ehPalindromo(texto) {
+  // implementar
+}
+
+// 9. Contar frequência
+function contarItens(lista) {
+  // implementar
+}
