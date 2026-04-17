@@ -1,0 +1,65 @@
+# 🚀 JavaScript Practice Roadmap
+
+Repositório focado em **prática real de programação com JavaScript**.
+
+Objetivo: evoluir de iniciante até nível profissional através de:
+
+* resolução de problemas
+* criação de funções
+* debugging (correção de erros)
+* construção de projetos
+
+---
+
+## 📅 Rotina diária
+
+* 20 min → teoria leve
+* 40 min → exercícios
+* 30 min → debug (corrigir código quebrado)
+
+---
+
+## 📁 Estrutura
+
+### 🧩 Exercícios
+
+* `nivel1.js` → fundamentos
+* `nivel2.js` → lógica intermediária
+* `nivel3.js` → problemas reais
+
+### 🐞 Debug
+
+* códigos com erro para treinar raciocínio
+
+### 🛠️ Projetos
+
+* aplicações simples simulando o mundo real
+
+---
+
+## 💡 Regras
+
+* Não copiar resposta
+* Tentar até travar
+* Usar `console.log`
+* Explicar o código em voz alta
+
+---
+
+## 🎯 Meta
+
+Virar um programador que:
+
+* resolve problemas sozinho
+* entende erros
+* escreve código limpo
+
+---
+
+## 🚀 Próximos passos
+
+* Subir projetos no GitHub
+* Aprender Git
+* Construir portfólio
+
+---
