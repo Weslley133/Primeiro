@@ -1,0 +1,14 @@
+// 10. Média
+function media(lista) {
+  // implementar
+}
+
+// 11. Aprovado
+function aprovado(lista) {
+  // implementar
+}
+
+// 12. Carrinho
+function totalCarrinho(produtos) {
+  // implementar
+}
