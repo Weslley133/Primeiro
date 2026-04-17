@@ -1,0 +1,24 @@
+// 1. Par ou ímpar
+function ehPar(numero) {
+  // implementar
+}
+
+// 2. Maior número
+function maiorNumero(lista) {
+  // implementar
+}
+
+// 3. Contar vogais
+function contarVogais(texto) {
+  // implementar
+}
+
+// 4. Fatorial
+function fatorial(n) {
+  // implementar
+}
+
+// 5. Inverter string
+function inverter(texto) {
+  // implementar
+}
