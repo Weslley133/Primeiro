@@ -1,0 +1,263 @@
+# 📔 Caderno de 100 Exercícios Práticos de JavaScript
+> **Instruções:** Copie este arquivo para o seu VS Code. Resolva os exercícios escrevendo o código logo abaixo do enunciado de cada um.
+
+---
+
+## 🟢 NÍVEL 1: FUNDAMENTOS BÁSICOS (1 ao 25)
+*Foco em: Variáveis, operadores aritméticos, concatenação e tipos de dados.*
+
+### 🔹 Variáveis e Operadores Simples
+01. Crie uma variável para armazenar o seu nome completo e outra para sua idade. Exiba uma frase no console: "Olá, meu nome é [nome] e eu tenho [idade] anos."
+02. Declare duas variáveis numéricas, calcule a soma, subtração, multiplicação e divisão entre elas. Exiba todos os resultados.
+03. Crie um programa que receba o valor de um produto e aplique um desconto de 15%. Exiba o valor original e o valor com desconto.
+04. Calcule a área de um retângulo a partir da largura e altura armazenadas em variáveis.
+05. Escreva um algoritmo que converta uma quantia em dólares para reais. Defina a cotação do dólar em uma constante.
+06. Crie um conversor de metros para centímetros.
+07. Descubra o sucessor e o antecessor de um número inteiro armazenado em uma variável.
+08. Calcule a média aritmética simples de 4 notas bimestrais.
+09. Crie um programa que calcule o preço final de um produto comprado a prazo, adicionando 10% de juros ao valor original.
+10. Peça (via variável) o ano de nascimento de uma pessoa e calcule a idade aproximada dela no ano atual.
+
+### 🐛 Identifique e Corrija o Erro (Debugging - Básico)
+11. O código abaixo deveria somar dois números, mas está concatenando. Corrija-o:
+   ```javascript
+   let n1 = "10";
+   let n2 = "20";
+   let resultado = n1 + n2;
+   console.log(resultado); // Esperado: 30
+   ```
+12. O código quebra ao tentar rodar. Descubra o motivo e conserte:
+   ```javascript
+   const pi = 3.1415;
+   pi = 3.14;
+   console.log(pi);
+   ```
+13. Corrija o erro de sintaxe que impede a exibição da mensagem:
+   ```javascript
+   let nome = "Carlos"
+   console.log("Bem-vindo " + nome)
+   ```
+14. Corrija a precedência dos operadores para que a média resulte em 7:
+   ```javascript
+   let media = 6 + 8 / 2;
+   console.log(media); // Esperado: 7
+   ```
+15. O código abaixo retorna `NaN`. Descubra por que e corrija:
+   ```javascript
+   let quantidade;
+   let total = quantidade * 5;
+   console.log(total);
+   ```
+
+### 🔹 Estruturas Condicionais Básicas
+16. Verifique se um número armazenado em uma variável é positivo, negativo ou zero.
+17. Verifique se um ano armazenado em uma variável é bissexto.
+18. Crie um programa que simule a validação de login: se o usuário for "admin" e a senha "1234", exiba "Acesso permitido". Caso contrário, "Acesso negado".
+19. Receba um número e exiba se ele é múltiplo de 5.
+20. Receba o peso e a altura de uma pessoa, calcule o IMC e exiba se ela está abaixo, no peso ideal ou acima do peso (use faixas simples de classificação).
+21. Escreva um switch-case que receba o número de um mês (1 a 12) e exiba o nome do mês por extenso.
+22. Crie uma condicional que verifique se uma pessoa pode votar (maior ou igual a 16 anos).
+23. Receba três números e exiba qual deles é o maior.
+24. Verifique se um caractere armazenado em uma variável é uma vogal ou uma consoante.
+25. Crie um sistema de notas que converta conceitos (A, B, C, D, F) em mensagens: A = "Excelente", B = "Ótimo", etc.
+
+---
+
+## 🟡 NÍVEL 2: ESTRUTURAS DE REPETIÇÃO E LISTAS (26 ao 50)
+*Foco em: Loops (for, while), Arrays e manipulação básica de coleções.*
+
+### 🔹 Estruturas de Repetição (Loops)
+26. Escreva um loop `for` que exiba os números de 1 a 50 no console.
+27. Escreva um loop `while` que exiba os números de 100 até 1 em ordem decrescente.
+28. Crie um algoritmo que exiba apenas os números pares de 1 a 100.
+29. Calcule o fatorial de um número inteiro fornecido utilizando um loop.
+30. Crie um programa que faça a somatória de todos os números de 1 a 100 e exiba o resultado final.
+31. Exiba a tabuada completa do número 9 utilizando um laço de repetição.
+32. Escreva um programa que conte quantas vogais existem em uma string específica.
+33. Crie um loop que simule uma contagem regressiva de um lançamento de foguete (de 10 até 0) e termine com a mensagem "Decolar!".
+34. Crie um loop que leia os números de 1 a 30. Se o número for múltiplo de 3, exiba "Fizz". Se for múltiplo de 5, exiba "Buzz". Se for dos dois, exiba "FizzBuzz".
+35. Gere os primeiros 10 números da sequência de Fibonacci usando um laço.
+
+### 🐛 Identifique e Corrija o Erro (Debugging - Loops e Arrays)
+36. Este loop deveria parar no 5, mas gera um loop infinito. Corrija-o:
+   ```javascript
+   let i = 1;
+   while (i <= 5) {
+       console.log(i);
+   }
+   ```
+37. O código abaixo deveria exibir todos os itens do array, mas pula o primeiro e dá erro no final. Conserte:
+   ```javascript
+   let nomes = ["Ana", "Pedro", "João"];
+   for (let i = 1; i <= nomes.length; i++) {
+       console.log(nomes[i]);
+   }
+   ```
+38. O desenvolvedor tentou adicionar um elemento ao fim do array, mas obteve um resultado inesperado. Corrija:
+   ```javascript
+   let lista = [1, 2, 3];
+   lista = lista.push(4);
+   console.log(lista); // Esperado: [1, 2, 3, 4]
+   ```
+39. O código abaixo deveria somar os valores do array, mas retorna um valor incorreto. Qual o erro?
+   ```javascript
+   let valores = [10, 20, 30];
+   let soma;
+   for (let i = 0; i < valores.length; i++) {
+       soma += valores[i];
+   }
+   console.log(soma);
+   ```
+40. Por que a condicional abaixo não funciona como o esperado? Corrija:
+   ```javascript
+   let num = 10;
+   if (num = 5) {
+       console.log("O número é cinco");
+   }
+   ```
+
+### 🔹 Arrays (Vetores)
+41. Crie um array com 5 nomes de cidades. Adicione uma nova cidade no início e uma no final do array.
+42. Remova o primeiro e o último elemento do array de cidades criado no exercício anterior.
+43. Dado o array `[5, 12, 18, 7, 23, 2]`, use um loop para encontrar e exibir o maior número da lista.
+44. Inverta a ordem de um array qualquer sem usar a função `.reverse()` nativa.
+45. Crie um programa que receba dois arrays de 3 elementos cada e crie um terceiro array que seja a junção dos dois.
+46. Multiplique cada valor dentro do array `[1, 2, 3, 4, 5]` por 2 usando um loop e salve os resultados em um novo array.
+47. Crie uma lista de compras com 4 itens. Verifique se o item "Leite" está na lista. Se não estiver, adicione-o.
+48. Remova um elemento específico de um array pelo seu índice utilizando a função correta.
+49. Conte quantas vezes um número específico aparece dentro de um array de números aleatórios.
+50. Calcule a média aritmética dos valores contidos em um array preenchido com 10 números.
+
+---
+
+## 🟠 NÍVEL 3: FUNÇÕES E OBJETOS (51 ao 75)
+*Foco em: Funções (tradicionais e arrow), escopo, objetos literais e métodos de array.*
+
+### 🔹 Funções e Métodos de Arrays (Map, Filter, Reduce)
+51. Escreva uma função chamada `saudar` que recebe um nome como parâmetro e retorna "Olá, [nome]!".
+52. Crie uma função que receba a idade de uma pessoa e retorne um valor booleano (`true` ou `false`) indicando se ela é maior de idade.
+53. Desenvolva uma arrow function que calcule e retorne o quadrado de um número passado por parâmetro.
+54. Crie uma função que receba uma temperatura em Celsius e retorne o equivalente em Fahrenheit.
+55. Escreva uma função que receba uma string e retorne a mesma string invertida.
+56. Dado o array `[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]`, use o método `.filter()` para gerar uma lista apenas com os números pares.
+57. Use o método `.map()` em um array de preços `[10, 20, 30, 40]` para aplicar um aumento de 10% em cada preço.
+58. Utilize o método `.reduce()` para somar todos os itens de um carrinho de compras representado por um array de números.
+59. Crie uma função que receba um array de strings e retorne um novo array contendo apenas as strings que possuem mais de 5 caracteres.
+60. Escreva uma função que valide se um e-mail é válido (verificação simples: deve conter "@" e ".").
+
+### 🐛 Identifique e Corrija o Erro (Debugging - Funções e Objetos)
+61. O código abaixo acusa que `resultado` não está definido. Corrija o problema de escopo:
+   ```javascript
+   function calcularSoma(a, b) {
+       let resultado = a + b;
+   }
+   calcularSoma(5, 5);
+   console.log(resultado);
+   ```
+62. A arrow function abaixo deveria retornar um objeto literal, mas retorna `undefined`. Corrija:
+   ```javascript
+   const criarUsuario = (nome) => { nome: nome };
+   console.log(criarUsuario("Lucas"));
+   ```
+63. O código abaixo quebra ao tentar acessar uma propriedade. Conserte o erro:
+   ```javascript
+   let carro = { marca: "Ford" };
+   console.log(carro.modelo.nome);
+   ```
+64. Por que o método do objeto abaixo não consegue acessar o nome? Corrija:
+   ```javascript
+   const pessoa = {
+       nome: "Maria",
+       saudar: () => {
+           return `Olá, meu nome é ${this.nome}`;
+       }
+   };
+   console.log(pessoa.saudar());
+   ```
+65. Corrija a função para que ela use um valor padrão caso o argumento não seja enviado:
+   ```javascript
+   function boasVindas(nome) {
+       console.log("Olá, " + nome);
+   }
+   boasVindas(); // Deve exibir: Olá, Visitante
+   ```
+
+### 🔹 Objetos Literais
+66. Crie um objeto chamado `livro` com propriedades para `titulo`, `autor` e `anoPublicacao`. Exiba as propriedades no console de forma organizada.
+67. Adicione uma nova propriedade `genero` ao objeto `livro` criado anteriormente. Modifique também o `anoPublicacao`.
+68. Crie um objeto `calculadora` que possua quatro métodos: `somar`, `subtrair`, `multiplicar` e `dividir`. Cada método deve receber dois parâmetros.
+69. Crie um objeto `aluno` com nome, notas (um array de 3 notas) e um método que calcule a média dessas notas.
+70. Crie um array contendo 3 objetos, onde cada objeto representa um produto (com nome e preco). Use um loop para exibir o nome de todos os produtos da lista.
+71. Delete uma propriedade específica de um objeto qualquer usando o operador correto.
+72. Crie um objeto `contaBancaria` com `titular`, `saldo` e os métodos `depositar` e `sacar`. O método sacar deve impedir a operação se o saldo for insuficiente.
+73. Use o operador `in` ou `hasOwnProperty` para verificar se uma propriedade existe em um objeto.
+74. Faça a desestruturação (Destructuring) de um objeto `usuario` para extrair apenas o `nome` e o `email` em variáveis limpas.
+75. Crie uma função que receba um objeto por parâmetro e altere uma de suas propriedades internamente.
+
+---
+
+## 🔴 NÍVEL 4: LÓGICA AVANÇADA E RECURSOS MODERNOS (76 ao 100)
+*Foco em: Métodos avançados, manipulação de strings/datas, Spread/Rest, Closures e Promises.*
+
+### 🔹 Lógica Avançada e Algoritmos
+76. Crie uma função que receba um número e verifique se ele é um número primo.
+77. Escreva uma função que receba uma frase e retorne a maior palavra contida nela.
+78. Desenvolva uma função que remova todos os elementos duplicados de um array (Dica: pesquise sobre o objeto `Set`).
+79. Crie uma função que valide se duas palavras passadas por parâmetro são anagramas (possuem as mesmas letras na mesma quantidade).
+80. Desenvolva uma função recursiva que calcule a sequência de Fibonacci até a posição N.
+81. Crie uma função que receba uma string em formato "camelCase" e mude para "snake_case".
+82. Ordene um array de objetos com base em uma propriedade numérica específica (ex: ordenar produtos do mais barato ao mais caro).
+83. Crie uma função que retorne a intersecção de dois arrays (apenas os elementos que aparecem em ambos).
+84. Escreva uma função que receba uma string e conte a frequência de aparição de cada caractere nela.
+85. Crie um gerador de senhas aleatórias que receba o comprimento desejado da senha por parâmetro.
+
+### 🐛 Identifique e Corrija o Erro (Debugging - Avançado)
+86. O código assíncrono abaixo imprime "Fim" antes dos dados chegarem. Corrija usando async/await:
+   ```javascript
+   function buscarDados() {
+       setTimeout(() => { return "Dados recebidos" }, 1000);
+   }
+   let dados = buscarDados();
+   console.log(dados);
+   console.log("Fim");
+   ```
+87. O código abaixo falha ao tentar copiar o array de forma independente. Corrija usando o operador spread:
+   ```javascript
+   let original = [1, 2, 3];
+   let copia = original;
+   copia.push(4);
+   console.log(original); // Esperado: [1, 2, 3] (Mas exibe 4 elementos)
+   ```
+88. Por que a Promise abaixo cai sempre no bloco `catch` mesmo parecendo correta? Conserte:
+   ```javascript
+   const promessa = new Promise((resolve, reject) => {
+       let sucesso = true;
+       if (sucesso) reject("Sucesso!");
+       else resolve("Erro!");
+   });
+   promessa.then(res => console.log(res)).catch(err => console.log(err));
+   ```
+89. O método `.sort()` abaixo está ordenando os números de forma bizarra (`[10, 2, 25, 5]`). Corrija o comportamento:
+   ```javascript
+   let numeros = [10, 5, 25, 2];
+   numeros.sort();
+   console.log(numeros);
+   ```
+90. Corrija o erro de sintaxe do operador rest/spread no parâmetro da função:
+   ```javascript
+   function somarTudo(...valores, multiplicador) {
+       // Código aqui
+   }
+   ```
+
+### 🔹 Recursos Modernos, Datas e Assincronismo
+91. Crie uma função que receba uma quantidade indeterminada de números usando o operador Rest (`...`) e retorne a multiplicação de todos eles.
+92. Utilize o operador Spread (`...`) para mesclar dois objetos distintos em um terceiro objeto único.
+93. Obtenha a data atual do sistema e exiba-a formatada no padrão brasileiro: `DD/MM/AAAA`.
+94. Calcule a diferença em dias entre duas datas específicas.
+95. Crie uma Promise simples que seja resolvida com sucesso após 3 segundos e exiba uma mensagem no terminal usando `.then()`.
+96. Converta o exercício anterior para usar a estrutura moderna `async/await` com tratamento de erros `try/catch`.
+97. Crie uma função chamada `agruparPor` que receba um array de objetos (ex: pessoas com idades) e agrupe-os por uma chave específica.
+98. Crie uma função que simule uma chamada de API (utilizando `setTimeout`) que rejeite a operação se um parâmetro booleano for falso.
+99. Escreva uma função que receba uma string contendo uma data em formato americano `AAAA-MM-DD` e converta para o objeto Date do JavaScript.
+100. Crie um mini-sistema de "Histórico de Transações": um array de objetos que representam entradas e saídas. Crie uma única função que use métodos de array para calcular o saldo final líquido atualizado.
